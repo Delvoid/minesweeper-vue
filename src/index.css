@@ -1,0 +1,30 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  background: rgb(2, 143, 172);
+  background: linear-gradient(
+    90deg,
+    rgba(2, 143, 172, 1) 0%,
+    rgba(0, 161, 194, 1) 49%,
+    rgba(2, 143, 172, 1) 100%
+  );
+}
+
+#app {
+  font-family: Avenir, Helvetica, Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-align: center;
+  color: #2c3e50;
+  margin-top: 40px;
+}
+
+.btn {
+  @apply border rounded-md cursor-pointer py-2 px-8 m-1 text-sm;
+}
+
+.new-game-button:active {
+  transform: scale(0.9);
+}
